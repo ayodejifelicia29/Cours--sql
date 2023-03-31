@@ -1,0 +1,17 @@
+Base de données => ce qui contient TOUTES les données
+
+Table => ce qui regrouper les données par concept
+=> étudiants /salle / fruits / ville/ réservation /idées
+
+Table ensemble de COLUMN => étudiants
+
+prenom
+nom
+age
+email
+password 
+dt_creation_profil
+dt_naissance
+
+=> table étudiant contient 7 colonnes
+
