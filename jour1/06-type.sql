@@ -26,11 +26,11 @@ BIGINT => très grand nombre
 DECIMAL 100000000000000000000.1
 DECIMAL 1.000000000000000000001
 DECIMAL(60,2) spécial MySQL / sur SQlite DECIMAL
-FLOAT   0 1 
+FLOAT   
 
 
 --------chiffres spéciaux 
-BOOLEAN
+BOOLEAN 0 1
 
 --3 date 
 DATE  =>  AAAA-MM-JJ
@@ -72,3 +72,46 @@ CREATE TABLE IF NOT EXISTS articles(
           like INT ,
           dt_publication DATE 
        );
+
+           
+           -- créer une table exo2
+-- contient 6 colonnes 
+-- id chiffre entier qui peut aller jusqu'à 4 Milliards
+-- dt_publication date et heure 
+-- dt_mise_a_jour date
+-- etat stocker 0 1
+-- texte maximum de 65 000 lettres
+-- prix chiffre à virgule 
+
+-- afficher cette table dans SQlite Explorer
+
+
+       
+
+
+  -- les types dépendaent du SGBD  utilisé
+       ---https://mariadb.com/kb/en/data-types/
+
+-- si je prends un type ordre de grandeur plus élevé que les données stockées 
+-- stocker la même information => un peu plus de place que si vous prenez des types mieux calibré
+-- si vous prenez trop petit TINYINT au lieu INT (pas SQLite) 
+-- ça ne stocke pas stocker toute l'information (trancher)
+
+-- si vous ne connaissez pas l'ordre de grandeur prenez plus grand dans un premier temps (théoriquement)
+-- dans la réalité, une fois que la table est créée => touche plus à la structure (sauf augmenter le type)
+
+-- MySQL => ALTER TABLE (mais existe pas en SQlite)
+-- sur sqlite / mySQL 
+-- supprimer la table
+
+
+       DROP TABLE IF EXISTS exo2 ;
+       CREATE TABLE IF NOT EXISTS exo2(
+            id  INT,
+            dt_publication DATETIME,
+            dt_mise_a_jour DATE,
+             etat   BOOLEAN,
+             texte   TEXT,
+             prix   DECIMAL
+       );
+
