@@ -5,8 +5,8 @@ Table => ce qui regrouper les données par concept
 
 Table ensemble de COLUMN => étudiants
 
-prenom
-nom
+prenom => Type (la nature des informations que l'on va stocker dans le colonne )
+nom => Type ( texte / chiffre / date)
 age
 email
 password 
@@ -14,4 +14,15 @@ dt_creation_profil
 dt_naissance
 
 => table étudiant contient 7 colonnes
+
+La ligne d'enregistrement / la ligne / les valeurs / nuplet
+
+----------
+
+pour créer des BASE DE DONNE / TABLES / COLUMN / LINGE 
+=> utiliser un logiciel SGBD
+=> SQlite 
+=> pour communiquer etr lui faire des demandes (query) avec SQlite =>
+
+utiliser le langage SQL
 

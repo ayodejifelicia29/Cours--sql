@@ -1,0 +1,11 @@
+SQlite => facile à installer car utilisable direction dans visual studio
+
+
+-----------------
+bd/ sqlite c'est la meme choose(base de données)
+
+
+
+05-table.sql => 
+
+DAns ce fichier que l'on va stocker les requetes (demandes ) => 
